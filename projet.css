@@ -1,0 +1,182 @@
+body, html{
+    background-color: #262626;
+    height: 100%;
+}
+.project-container{
+    width:auto;
+    height: 100vh;
+    margin-right: 63px;
+    margin-left: 63px;
+    margin-top: 20em;
+
+
+}
+.project-title{
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-top: 3em;
+}
+.Projects{
+    text-align: center;
+    padding: 12px;
+    font-family: sans-serif;
+    font-size: 28px;
+    color: #f2f2f2;
+
+}
+.Projects span{
+    color: #f24405;
+}
+/*{
+    border: 1px solid black;
+}*/
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+   
+    
+}
+ 
+.card-project{
+    width: 25%;
+    height: 50vh;
+    margin: 12px;
+    border: 1px solid black;
+    margin-bottom: 10em;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.card-project:hover{
+    transition: .3s;
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+  
+}
+
+.card-project:hover .card-footer{
+    border-bottom: 1px solid #f24405;
+    animation: bord2 1.7s forwards linear;
+    -webkit-animation: bord2 1.7s forwards linear;
+}
+
+.project-icon {
+    filter: drop-shadow(0 1px 3px rgba(255, 255, 255, 0.4));
+    -webkit-filter: drop-shadow(0 1px 3px rgba(255, 255, 255, 0.4));
+}
+
+@keyframes bord2 {
+    0%{
+      border-left: 1px solid #f24405;
+    }
+    25%{
+      border-right: 1px solid #f24405;
+    }
+    
+    100%{
+      border-bottom: 1px solid #f24405;
+      border-right: 1px solid #f24405;
+      border-left: 1px solid #f24405;
+    }
+}
+  
+.card-image{
+    width: 100%;
+    height:30vh;
+    
+    
+}
+.card-project:nth-child(1) .card-image{
+    background: url(./assets/img/project/U_kajy.png) center/cover;
+}
+.card-project:nth-child(2) .card-image{
+    background: url(./assets/img/project/U_AAENI.png) center/cover;
+}
+.card-project:nth-child(3) .card-image{
+    background: url(./assets/img/project/U-Banque.PNG) center/cover;
+}
+.card-project:nth-child(4) .card-image{
+    background: url(./assets/img/project/ravinala.png) center/cover;
+}
+.card-project:nth-child(5) .card-image{
+    background: url(./assets/img/project/U_agenda.png) center/cover;
+}
+.card-project:nth-child(6) .card-image{
+    background: url(./assets/img/project/U_travel.PNG) center/cover;
+}
+/* .card-image img{
+    width: 440px;
+} */
+.card-project:first-child .card-footer{
+    background: url(./assets/img/cards/project-card-1.png) center;
+}
+.card-project:nth-child(2) .card-footer{
+    background: url(./assets/img/cards/project-card-2.png) center;
+}
+.card-project:nth-child(3) .card-footer{
+    background: url(./assets/img/cards/project-card-3.png) center;
+}
+.card-project:nth-child(4) .card-footer{
+    background: url(./assets/img/cards/project-card-4.png) center;
+}
+.card-project:nth-child(5) .card-footer{
+    background: url(./assets/img/cards/project-card-5.png) center;
+}
+.card-project:nth-child(6) .card-footer{
+    background: url(./assets/img/cards/project-card-6.png) center;
+}
+.card-footer{
+
+    width: 100%;
+    height: 22vh;
+    box-shadow: 1px 11px 32px -4px rgba(0,0,0,0.53);
+   -webkit-box-shadow: 1px 11px 32px -4px rgba(0,0,0,0.53);
+   -moz-box-shadow: 1px 11px 32px -4px rgba(0,0,0,0.53);
+}
+
+.techno-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project-card-title::first-letter{
+    color: #f24405;
+}
+
+@media screen and (max-width:992px) {
+    .project-container{
+        margin-top: 50em;
+    }
+    .project-list{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .card-project{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .project-container{
+        margin-top: 130em;
+    }
+    .project-list{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}

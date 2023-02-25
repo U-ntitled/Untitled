@@ -1,0 +1,70 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #262626;
+}
+
+
+/* Main container */
+
+.main_container {
+    width: 85%;
+    margin: auto;
+}
+
+
+/* Service Header */
+
+.service-header {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.service-header h2 {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.paletteOrange {
+    color: #F24405;
+}
+
+
+/* Service body */
+
+.service-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.centered-element {
+    margin: 10px;
+    padding: 10px;
+}
+
+.centered-element img {
+    width: 100px;
+    margin: auto;
+    /* filter: invert(); */
+    /* -webkit-filter: invert(); */
+}
+
+.centered-element h3 {
+    text-align: center;
+}
+
+
+/* Responsive  */
+
+@media screen and (max-width:750px) {
+    .service-body {
+        flex-wrap: wrap;
+    }
+    .main_container {
+        text-align: justify;
+    }
+}
