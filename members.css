@@ -103,6 +103,15 @@ html, body, .groups, .members {
   left: 25%;
   /* border-radius: 50%; */
 }
+.member:hover img{
+  transition: .6s;
+  border: .1px dotted #f24405;
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -ms-transition: .6s;
+  -o-transition: .6s;
+}
+
 .member .member-content {
   padding: 0 20px 30px 20px;
   position: relative;
