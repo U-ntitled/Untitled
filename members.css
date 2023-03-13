@@ -105,7 +105,7 @@ html, body, .groups, .members {
 }
 .member:hover img{
   transition: .6s;
-  border: .1px dotted #f24405;
+  border: .1px solid #f2440577;
   -webkit-transition: .6s;
   -moz-transition: .6s;
   -ms-transition: .6s;
